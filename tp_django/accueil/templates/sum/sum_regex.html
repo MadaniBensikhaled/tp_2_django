@@ -1,0 +1,6 @@
+<header>
+    <!-- On additionne num1 et num2 dans le template -->
+    {% with sum=num1 %}
+    <h1>La somme est égale à {{sum|add:num2}}.</h1>
+    {% endwith %}
+</header>

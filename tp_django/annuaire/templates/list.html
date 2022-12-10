@@ -1,0 +1,14 @@
+{% include 'layouts/base.html' %}{% load static %}
+<div class="list">
+    <div>
+        {% for personne in contacts %}
+        <particulier>
+            <h2>
+                <a href ="/annuaire/contact/{{personne.nom}}_{{personne.prenom}}">
+                    {{personne.nom}}
+                </a>
+            </h2>
+        </particulier>
+        {% endfor %}
+    </div>
+</div>

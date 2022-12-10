@@ -1,0 +1,14 @@
+{% include 'layouts/base.html' %}{% load static %}
+<detailparticulier>
+    <h1>{{personne.nom}} {{personne.prenom}}</h1>
+    <p> Numéro de téléphone : {{personne.telephone}}</p>
+</detailparticulier>
+{% if personne.entreprise == False %}
+<a href ="/annuaire/particuliers">
+    Retourner sur l'annuaire (Pages Blanches)
+</a>
+{% else %}
+<a href ="/annuaire/entreprises">
+    Retourner sur l'annuaire (Pages Jaunes)
+</a>
+{% endif %}
